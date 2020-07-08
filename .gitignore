@@ -312,4 +312,4 @@ img/*
 cnn_captcha/logs
 cnn_captcha/model
 cnn_captcha/sample
-cnn_captcha/proxy.py
+mark_captcha/proxy.py
