@@ -78,7 +78,7 @@ class TrainModel(CNN):
         :return:tuple (str, numpy.array)
         """
         # 标签
-        label = img_name.split("_")[0]+"=?"
+        label = img_name.split("_")[0]
         # 文件
         img_file = os.path.join(img_path, img_name)
         captcha_image = Image.open(img_file)
