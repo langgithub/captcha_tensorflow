@@ -4,9 +4,12 @@
 # creat_time: 2020/7/10 上午11:09
 # file: common_captcha3.py
 
+"""
+通过模型打标签
+"""
+
 import io
 import os
-import time
 import base64
 import random
 import requests

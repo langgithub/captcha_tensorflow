@@ -9,6 +9,11 @@ import random
 from PIL import Image 
 from proxy import get_proxy
 
+
+"""
+通过ocr.dll 模型打标签
+"""
+
 sysstr = platform.system()
 if sysstr == "Windows":
     import ctypes
