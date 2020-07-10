@@ -9,10 +9,10 @@ import os
 from PIL import Image
 from cnnlib.recognition_object import Recognizer
 
-image_height = 50
-image_width = 100
+image_height = 30
+image_width = 105
 max_captcha = 5
-char_set = "0123456789+=?"
+char_set = "0123456789abcdefghijklmnopqrstuvwxyz"
 model_save_dir = os.path.dirname(os.path.dirname(__file__))+"/model/"
 R = Recognizer(image_height, image_width, max_captcha, char_set, model_save_dir)
 
@@ -24,7 +24,7 @@ def verify_captcha(r_img):
 
 
 def run():
-    with open(f'/Users/yuanlang/Downloads/a.png', 'rb') as f:
+    with open(f'/Users/yuanlang/work/python/project/captcha_tensorflow/cnn_captcha/sample/test/2auwv_1315774186590738.jpeg', 'rb') as f:
         print(verify_captcha(f.read()))
 
 
