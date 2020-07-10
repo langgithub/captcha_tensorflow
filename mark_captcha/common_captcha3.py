@@ -89,7 +89,7 @@ class MarkCaptcha(object):
 
 def run():
     mc = MarkCaptcha()
-    for i in range(1000):
+    for i in range(20000):
         mc.taikang()
 
 
